@@ -1,0 +1,19 @@
+---
+import '@/styles/globals.css';
+import Layout from '../layouts/Layout.astro';
+import Hero from '@/components/sections/Hero';
+import Features from '@/components/sections/Features';
+import ComponentShowcase from '@/components/sections/ComponentShowcase';
+import Pricing from '@/components/sections/Pricing';
+import CTA from '@/components/sections/CTA';
+---
+
+<Layout title="DesignFlow Studio - Modern Web Design Agency">
+  <main class="min-h-screen">
+    <Hero client:load />
+    <Features client:load />
+    <ComponentShowcase client:load />
+    <Pricing client:load />
+    <CTA client:load />
+  </main>
+</Layout>
